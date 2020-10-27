@@ -12,10 +12,10 @@
     <div>
         <div class="main-title">PipeMonitor</div>
         <div>
-            <p class="description">PipeMonitor is a hardware/software prototype for real-time detection and recognition of object state and defects in structures using elastic wave propagation analysis. </p>
+            <p class="description">PipeMonitor is a hardware/software prototype for real-time detection and recognition of objects and object states using elastic wave propagation analysis. </p>
             <p class="description">This is a part of the research development for detection of illegal operations with oil, gas and water pipelines, but system can detect changes in various types of structures and objects on surfaces.</p>
             <div style="text-align: center;">
-                <img class="image" src="images/hw.jpg">
+                <img class="image" style="margin-top: 5px;" src="images/hw.jpg">
             </div>
             <p class="description">Based on my PhD work and patented invention with added neural networks using NeuralLibrary: </p>
         </div>
@@ -25,24 +25,55 @@
         </div>
 
         <div>
-            <p class="description">PhD work and articles (Russian science journals)
-                <a target="_blank" href="https://alexfcoding.github.io"> can be found here</a>
+            <p class="description" style="font-weight: bold;">
+                <a target="_blank" href="https://alexfcoding.github.io">PhD Work with Articles from Russian Science Journals and Other Projects</a>
             </p>
         </div>
 
-        <div class="description" style="font-weight: bold;">Demo #1: Real-time Object State Acoustic Recognition with C# Neural Network, Microcontroller, Elastic Wave Generator and Vibration Sensor</div>
+        <div style="max-width:1200px; margin:0 auto;">
+            <ul style="font-size: 26px;">
+                <li>Based on a principle of generation and analysis of elastic waveforms, propagated through controlled object</li>
+                <li>Working Modes:</li>
+                    <ul>
+                        <li>Autonomous detection of abnormal object condition without PC connection</li>
+                        <li>Real-time detection and recognition of current object state with C# software</li>
+                        <li>Detection and recognition of object on a sensitive surface with C# software</li>
+                        <li>Software-only mode: loading and analyzing of experimental recorded WAV-files for object classification</li>
+                    </ul>
+                <li>Hardware:</li>
+                <ul>
+                    <li>Arduino Due for impulse generation, coherent accumulation, correlation, plotting on display, sending signals to C# software via serial connection</li>
+                    <li>A periodic impulse generator (solenoid - long range, relay - working with demo mini prototype)</li>
+                    <li>A vibration sensor, powered from DC or batteries</li>
+                </ul>
+                <li>Software:</li>
+                <ul>
+                    <li>Сreating a list of states (objects) and setting the corresponding images</li>
+                    <li>Receiving of accumulated impulses from a microcontroller via serial connection</li>
+                    <li>Working with recorded WAV-files</li>
+                    <li>Increasing signal-to-noise ratio by coherent impulse accumulation (from loaded files)</li>
+                    <li>Fast Fourier Transform for signals</li>
+                    <li>Training a neural network on a spectrum or waveforms [<a target="_blank" href="https://github.com/alexfcoding/NeuralLibrary">NeuralLibrary</a>]</li>
+                    <li>FFT classifiers training with feature extraction (patented invention)</li>
+                    <li>Recognition of object states based on a signal classification</li>
+                    <li>A Sound indication of recognized state by speech synthesizer (not shown in demos)</li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="description-post" style="font-weight: bold;">Demo #1: Real-time Object State Acoustic Recognition with C# Neural Network, Microcontroller, Elastic Wave Generator and Vibration Sensor</div>
         <div class="video-container">
             <iframe width="1280" height="720" src="https://www.youtube.com/embed/KMvTLcvwkfA" allowfullscreen="true">
             </iframe>
         </div>
 
-        <div class="description" style="font-weight: bold;">Demo #2: Real-time Object Acoustic Recognition on a Sensitive Surface with C# Neural Network, Microcontroller, Elastic Wave Generator and Vibration Sensor</div>
+        <div class="description-post" style="font-weight: bold;">Demo #2: Real-time Object Acoustic Recognition on a Sensitive Surface with C# Neural Network, Microcontroller, Elastic Wave Generator and Vibration Sensor</div>
         <div class="video-container">
             <iframe width="1280" height="720" src="https://www.youtube.com/embed/AHFEp_SgWSE" allowfullscreen="true">
             </iframe>
         </div>
 
-        <div class="description" style="font-weight: bold;">Demo #3: Experiment of Determining the State of a Water Pipeline by Analyzing Recorded Acoustic Signals</div>
+        <div class="description-post" style="font-weight: bold;">Demo #3: Experiment of Determining the State of a Water Pipeline by Analyzing Recorded Acoustic Signals</div>
 
         <div style="text-align: center;">
             <a target="_blank" href="https://alexfcoding.github.io/PipeMonitor/images/demo_gif.gif">
@@ -56,7 +87,7 @@
         </div>
 
         <div style="text-align: center;">
-            <img class="image" src="images/experiment.jpg">
+            <img class="image" style="margin-top: 5px;" src="images/experiment.jpg">
         </div>
 
         <div style="text-align: center;">
