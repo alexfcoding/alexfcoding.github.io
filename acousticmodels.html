@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="css/main.css">
+    <title>Aleksander Fedotov</title>
+</head>
+<body id="bg-img">
+    <header>
+        <script src="https://kit.fontawesome.com/06c28a951d.js" crossorigin="anonymous"></script>
+
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="index.html" class="nav-link">
+                        Проекты
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="articles.html" class="nav-link">
+                        Научные публикации
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts.html" class="nav-link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div class='menu-wide'>
+            <li class="nav-item-wide current">
+                <a href="index.html" class="nav-link-wide">
+                    Проекты
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="articles.html" class="nav-link-wide">
+                    Научные публикации
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="contacts.html" class="nav-link-wide">
+                    Контакты
+                </a>
+            </li>
+        </div>
+        <div id="boxshadow"></div>
+
+        <!-- <canvas id="canvas" width="200" height="200" class="main-image">
+            <canvas id="canvas2" width="200" height="200" class="main-image">
+                <img id="my-image" src="img/portrait2.jpg" alt="Александр Федотов">
+            </canvas>
+        </canvas> -->
+
+        <div class="projects">
+            <div class="item">
+                <div class="project-title">Моделирование акустического сигнала упругих колебаний, формируемых в трубопроводе точечным воздействием на его поверхность</div>
+
+                <ul class="project-description">
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/acousticmodels/plots.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Оценка адекватности моделей сравнением с эмпирическими сигналами</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/acousticmodels/accumulation.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Выделение импульса на фоне помехи когерентным накоплением</div>
+
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/acousticmodels/preview_simple_model.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Выражение для "базовой" модели генерации амплитуд сигнала</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/acousticmodels/preview_model7.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Выражение для "полной" модели генерации амплитуд сигнала</div>
+                    <div class="project-title">Сгенерированный импульс для трубы длиной 5 метров
+
+                        <div style="text-align: center; margin-top: 15px;">
+                            <audio controls>
+                                <source src="sound/projects/acousticmodels/model_simple_5m.wav" type="audio/WAV">
+                              Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="project-title">Импульс, записанный на трубе длиной 5 метров
+                        <div style="text-align: center;  margin-top: 15px;">
+                            <audio controls>
+                                <source src="sound/projects/acousticmodels/real_pipe_5m.wav" type="audio/WAV">
+                              Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="project-title">Сгенерированный импульс для трубы длиной 190 метров
+                        <div style="text-align: center;  margin-top: 15px;">
+                            <audio controls>
+                                <source src="sound/projects/acousticmodels/model_full_190m.wav" type="audio/WAV">
+                              Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+
+                    <div class="project-title">Импульс, записанный на трубопроводе протяженностью 190 метров
+                        <div style="text-align: center;  margin-top: 15px;">
+                            <audio controls>
+                                <source src="sound/projects/acousticmodels/real_pipe_190m.wav" type="audio/WAV">
+                              Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Модели базируются на работах:</div>
+                        <li>Impact. Theory and Physical Properties of Impacted Bodies. Goldsmith W., 1960</li>
+                        <li>Vibration problems in engineering. Timoshenko S.P., Young, D.H., Weaver W., 1967</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Релизация в Matlab</li>
+                        <li>Синтез формы акустического сигнала, фиксируемого на поверхности трубопровода при точечном воздействии</li>
+                        <li>Моделирование последовательностей импульсов</li>
+                        <li>Когерентное накопление сигналов для повышения отношения сигнал/шум</li>
+                        <li>Установка параметров трубопровода и источника воздействия</li>
+                        <li>Построение формы сигнала и амплитудно-частотного спектра</li>
+                        <li>Построение 3d-спектрограммы сигнала</li>
+                        <li>Наложение помехи на моделируемый сигнал</li>
+                        <li>Сохранение моделируемого импульса в wav-файл</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Параметры модели:</div>
+                        <li>Координата воздействия и приема сигнала</li>
+                        <li>Масса трубопровода</li>
+                        <li>Протяженность трубопровода</li>
+                        <li>Толщина стенки трубы и ее диаметр</li>
+                        <li>Плотность материала стенки трубопровода</li>
+                        <li>Модуль Юнга</li>
+                        <li>Коэффициент жесткости основания трубопровода</li>
+                        <li>Длительность контакта источника колебаний с поверхностью трубы</li>
+                        <li>Число мод</li>
+                        <li>Частота дискретизации сигнала</li>
+                        <li>Длительность сигнала</li>
+                        <div class="project-description-title" style="color:#ffa600; text-align: center;">Публикации по проекту</div>
+                        <a class="btn-dark" href="articles/SimpleModel.pdf" target="_blank">
+                            <div>Математическая модель упругих колебаний трубопровода при ударном воздействии / "Международный научно-исследовательский журнал" – 2017
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+                        <a class="btn-dark" href="articles/FullModel.pdf" target="_blank">
+                            <div>Полная модель колебаний трубопровода при ударном воздействии / журнал "Омский научный вестник" - 2018
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+                        <a class="btn-dark" href="articles/ModelTest.pdf" target="_blank">
+                            <div>Оценка адекватности моделей колебаний трубопровода при ударном воздействии / журнал "Омский научный вестник" - 2018
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+                        <a class="btn-dark" href="articles/DefectModel.pdf" target="_blank">
+                            <div>Модель колебаний трубопровода при несанкционированном воздействии / журнал "Омский научный вестник" - 2019
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+                        <a class="btn-dark" href="articles/Thesis.pdf" target="_blank">
+                            Активный помехоустойчивый виброакустический способ контроля состояния магистрального трубопровода / диссертация - 2017
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+                        <a class="btn-dark" href="articles/Abstract.pdf" target="_blank">
+                            Активный помехоустойчивый виброакустический способ контроля состояния магистрального трубопровода / автореферат - 2017
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                         <div style="margin-top: 30px;">
+                            <a href="https://github.com/alexfcoding/AcousticModels" class="btn-light">
+                                Код на GitHub
+                            </a>
+                            <a href="index.html" class="btn-light">
+                                Все проекты
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </main>
+<footer id="main-footer">
+    &copy; 2020
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+

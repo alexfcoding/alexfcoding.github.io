@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="css/main.css">
+    <title>Aleksander Fedotov</title>
+</head>
+<body id="bg-img">
+    <header>
+        <script src="https://kit.fontawesome.com/06c28a951d.js" crossorigin="anonymous"></script>
+
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="index.html" class="nav-link">
+                        Проекты
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="articles.html" class="nav-link">
+                        Научные публикации
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts.html" class="nav-link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div class='menu-wide'>
+            <li class="nav-item-wide current">
+                <a href="index.html" class="nav-link-wide">
+                    Проекты
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="articles.html" class="nav-link-wide">
+                    Научные публикации
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="contacts.html" class="nav-link-wide">
+                    Контакты
+                </a>
+            </li>
+        </div>
+        <div id="boxshadow"></div>
+
+        <!-- <canvas id="canvas" width="200" height="200" class="main-image">
+            <canvas id="canvas2" width="200" height="200" class="main-image">
+                <img id="my-image" src="img/portrait2.jpg" alt="Александр Федотов">
+            </canvas>
+        </canvas> -->
+
+        <div class="projects">
+            <div class="item">
+                <div class="project-title">Фильтрация похожих изображений применением перцептивного хеширования</div>
+
+                <ul class="project-description">
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/hashed_harold.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Генерация хеша</div>
+
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/search_similar.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Поиск похожих изображений</div>
+
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/move_similar.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Перемещение похожих изображений в другую папку (правая колонка), оставлены только уникальные (левая)</div>
+
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/2_950px.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Порог чувствительности 2% (перемещены почти идентичные изображения)</div>
+
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/33_950px.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Порог чувствительности 33% (175 изображений из 186 были перемещены, остались только уникальные)</div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Небольшой скрипт на Python + OpenCV с предпросмотром процесса фильтрации изображений</li>
+                        <li>Перемещает все похожие изображения или их дубликаты из выбранной директории</li>
+                        <li>Пользователь задает путь к папке с изображениями, папку для перемещения, размер хеша и коэффициент чувствительности (от 0 до 100, где 0 - абсолютная схожесть изображений, только дубликаты будут перемещены)</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Алгоритм</div>
+                        <li>Сжатие изображения до размера NxN пикселей</li>
+                        <li>Конвертация пикселей в черно-белый</li>
+                        <li>Расчет среднего значения цвета всех пикселей</li>
+                        <li>Создание нового изображения (хеш): если значение цвета пикселя превышает среднее, то делаем его белым, в противном случае - черным</li>
+                        <li>Сравнение хешей всех изображений используя расстояние Хэмминга</li>
+                        <li>Изображения считаются схожими и перемещаются из указанной папки, если разница между количеством одинаковых пикселей не превышает порог чувствительности, заданный пользователем</li>
+
+                        <div style="margin-top: 30px;">
+                            <a href="https://github.com/alexfcoding/ImageCleaner" class="btn-light">
+                                Код на GitHub
+                            </a>
+                            <a href="index.html" class="btn-light">
+                                Все проекты
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </main>
+<footer id="main-footer">
+    &copy; 2020
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+

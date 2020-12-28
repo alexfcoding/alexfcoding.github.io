@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="css/main.css">
+    <title>Aleksander Fedotov</title>
+</head>
+<body id="bg-img">
+    <header>
+        <script src="https://kit.fontawesome.com/06c28a951d.js" crossorigin="anonymous"></script>
+
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="index.html" class="nav-link">
+                        Проекты
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="articles.html" class="nav-link">
+                        Научные публикации
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts.html" class="nav-link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div class='menu-wide'>
+            <li class="nav-item-wide">
+                <a href="index.html" class="nav-link-wide">
+                    Проекты
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="articles.html" class="nav-link-wide">
+                    Научные публикации
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="contacts.html" class="nav-link-wide">
+                    Контакты
+                </a>
+            </li>
+        </div>
+        <div id="boxshadow"></div>
+
+        <!-- <canvas id="canvas" width="224" height="224" class="main-image">
+            <canvas id="canvas2" width="224" height="224" class="main-image">
+                <img id="my-image" src="img/portrait3.jpg" alt="Александр Федотов">
+            </canvas>
+        </canvas> -->
+
+        <img class="main-image" id="my-image" src="img/portrait.jpg" alt="Александр Федотов">
+
+        <div class="lg-heading">
+            Александр Федотов
+        </div>
+        <div class="icons">
+            <a href="https://github.com/alexfcoding">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://t.me/fedotov1609">
+                <i class="fab fa-telegram fa-2x"></i>
+            </a>
+            <a href="http://vk.com/fedotov1609">
+                <i class="fab fa-vk fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCjyK6u2YoWop0A3IEyhf5dA">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+        </div>
+        <h2 class="sm-heading">
+            <span style="font-weight: bold;">Программист-исследователь</span>, кандидат технических наук по специальности 05.11.13 "Приборы и методы контроля природной среды, веществ, материалов и изделий"
+        </h2>
+
+        <h2 class="sm-heading " style="text-align: justify;">
+            <span style="font-weight: bold;  ">Интересы:</span> разработка программно-аппаратных комплексов | выполнение научно-исследовательских работ | публикации в научных журналах | патентование изобретений | обработка и распознавание сигналов, изображений | машинное обучение | программирование игр, десктоп и веб-приложений
+        </h2>
+
+        <h2 class="sm-heading" style="text-align: justify;">
+            <span style="font-weight: bold;">Языки и технологии:</span> <span style="color: #ffa600;">C#:</span> WinForms, WPF, Unity 3D |
+            <span style="color: #ffa600;">Python+Linux:</span> OpenCV, Flask | <span style="color: #ffa600;">Web:</span> HTML, CSS, JS |
+            <span style="color: #ffa600;">Arduino:</span> модули, датчики, работа с АЦП |
+            <span style="color: #ffa600;">Моделирование:</span> Matlab |
+            <span style="color: #ffa600;">Нейронные сети:</span> NeuralLibrary (самописная C# библиотека), YOLO, MASK R-CNN, ESRGAN, DAIN и др. | <span style="color: #ffa600;">Неразрушающий контроль:</span> патенты на изобретение 2676386, 2463590, 2490153, 2687177
+        </h2>
+
+        <div class="projects">
+            <div class="item">
+                <div class="project-title">Прототип программно-аппаратного комплекса для распознавания состояния трубопровода анализом зондирующих акустических сигналов (по патенту на изобретение №2676386 с добавлением работы многослойного персептрона)</div>
+                <ul class="project-description">
+                    <img class="project-image" src="img/projects/pipemonitor/hw.jpg" alt="Project">
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/KMvTLcvwkfA?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Акустическое распознавание состояния объекта на демонстрационном стенде</div>
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/AHFEp_SgWSE?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Акустическое распознавание класса объекта, устанавливаемого на чувствительную поверхность</div>
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/uTnSedTINIE?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Эксперимент по распознаванию несанкционированной деятельности на водопроводе (имитация создания шурфа, установки оборудования на трубу для врезки)</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" style="margin-top: 0px;" src="img/projects/pipemonitor/pipe_cut7.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Распознавание сигналов тремя классификаторами</div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Разработка является практическим результатом исследования возможности автоматического обнаружения и распознавания несанкционированных воздействий на нефте-, газо- и водопроводы посредством периодического воздействия на него упругими колебаниями, их регистрации и классификации</li>
+                        <li>Возможна адаптация под обнаружение изменений в функционировании различных агрегатов и распознавании предметов, устанавливаемых на чувствительную поверхность</li>
+                        <li>Одна из потенциальных областей применения - охранные комплексы, так как система реагирует на бесшумное прикосновение к контролируемому объекту и изменение его характеристик (поворот задвижки, изъятие элементов из системы и т.д.)</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Принцип работы</div>
+                        <li>Возбуждение и регистрация упругих колебаний в контролируемом объекте с помощью микроконтроллера, генератора импульсов, пьезоэлектрического акселерометра</li>
+                        <li>Передача накопленных сигналов от микроконтроллера в C# WinForms-приложение через USB -> COM-порт для тренировки БПФ-классификаторов и нейронной сети</li>
+                        <li>Обучение распознаванию заключается в формировании "эталонных" состояний контролируемого объекта посредством его зондирования импульсами упругих колебаний в штатном режиме с последующим внедрением имитаторов состояний</li>
+                        <li>Распознавание текущего состояния объекта в C#-приложении посредством непрерывного сравнения поступающих импульсов с известными классами сигналов</li>
+                        <li>Построение многослойного персептрона, его обучение и работа реализованы подключением моей небольшой DLL-библиотеки: <a href="https://github.com/alexfcoding/NeuralLibrary"><span style="color: #ffa600;">github.com/alexfcoding/Neural&shy;Library</span> </a></li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Режимы работы</div>
+                        <li>Обнаружение и распознавание состояния объекта оборудованием в связке с ПО на C# (USB -> COM-порт для связи)</li>
+                        <li>Обнаружение и распознавание объектов на чувствительной поверхности оборудованием в связке с ПО на C# (USB -> COM-порт для связи)</li>
+                        <li>Автономное обнаружение отклонения состояния объекта от нормы с помощью оборудования без подключения к ПК. Распознавание двух состояний: "Штатное"/"Отклонение"</li>
+                        <li>Программный режим: загрузка и анализ записанных WAV-файлов для исследования и классификации</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Аппаратная часть</div>
+                        <li>Микроконтроллер на Atmel SAM3X8E ARM Cortex-M3 (Arduino Due) для генерации сигнала, его регистрации с помощью АЦП, когерентного накопления, корреляции, отображения его формы на дисплее, а также передачи сигналов C# приложению для обработки через COM-порт</li>
+                        <li>Генераторы периодических импульсов (электромагнитный актуатор - работа в дальней зоне на дистанции более 300 м, электромагнитное реле - для демонстрационного стенда)</li>
+                        <li>Пьезоэлектрический акселерометр + усилитель сигнала</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Программная часть (C#)</div>
+                        <li>Создание списка из любого количества состояний (распознаваемых классов) и сопоставление соответствующих изображений для индикации результата распознавания</li>
+                        <li>Прием накопленных импульсов от микроконтроллера через COM-порт или загрузка записей из WAV-файлов</li>
+                        <li>Повышение отношения сигнал/шум алгоритмом когерентного накопления импульсов</li>
+                        <li>Быстрое преобразование Фурье для сигналов. Построение амплитудного спектра текущего сигнала, его формы, доверительных интервалов</li>
+                        <li>Обучение нейронной сети на сигналах</li>
+                        <li>Обучение БПФ классификаторов</li>
+                        <li>Опция извлечения признаков состояний</li>
+                        <li>Распознавание состояний на основе решений от БПФ классификаторов и нейронной сети</li>
+                        <li>Вывод изображения распознанного состояния на экран</li>
+
+                        <div class="project-description-text-title" style="color:#ffa600; text-align: center;">Основные публикации по проекту</div>
+
+                        <a class="btn-dark" href="articles/PatentRU2676386.pdf" target="_blank">
+                            Способ обнаружения несанкционированных воздействий на трубопровод : пат. 2676386 Рос. Федерация - 2018
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <a class="btn-dark" href="articles/PatentRU2463590.pdf" target="_blank">
+                            <div>Способ обнаружения изменений параметров среды в окружении заглубленного магистрального продуктопровода : пат. 2463590 Рос. Федерация - 2012
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Algorithm.pdf" target="_blank" >
+                            <div>Алгоритм обнаружения несанкционированных воздействий на трубопровод / журнал "Энергетик" (ВАК) - 2019
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+
+                        <a class="btn-dark" href="articles/ErrorProbability.pdf" target="_blank">
+                            О вероятности ошибки обнаружения несанкционированных воздействий на трубопровод / журнал "Омский научный вестник" (ВАК) - 2019
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Identification.pdf" target="_blank">
+                            Идентификация несанкционированных воздействий на трубопровод / журнал "Энергосбережение и водоподготовка" (ВАК) - 2018
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <a class="btn-dark" href="articles/NoiseStability.pdf" target="_blank">
+                            О помехоустойчивости активного виброакустического способа / журнал "Омский научный вестник" (ВАК) - 2018
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Spectrum.pdf" target="_blank">
+                            <div>Амплитудно-частотный спектр виброакустического сигнала при ударном воздействии на трубопровод / журнал "Энергосбережение и водоподготовка" (ВАК) - 2018
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Regression.pdf" target="_blank">
+                            <div>Влияние факторов окружающей среды на распространение упругих колебаний в трубопроводе / журнал "Омский научный вестник" (ВАК) - 2018
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Thesis.pdf" target="_blank">
+                            Активный помехоустойчивый виброакустический способ контроля состояния магистрального трубопровода / диссертация - 2017
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Abstract.pdf" target="_blank">
+                            Активный помехоустойчивый виброакустический способ контроля состояния магистрального трубопровода / автореферат - 2017
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <div style="margin-top: 30px;">
+                            <a href="pipemonitor.html" class="btn-light">
+                                Страница проекта
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="project-title">С# DLL библиотека с демонстрационным приложением для создания, тренировки, валидации моделей нейронных сетей</div>
+                <ul class="project-description">
+                    <div style="text-align: center;">
+                        <img class="project-image-small" src="img/projects/neurallibrary/digits_cut_2.gif" alt="Project">
+                        <img class="project-image-small" src="img/projects/neurallibrary/icons_cut_2.gif" alt="Project">
+                        <div class="project-title-inside">Тест распознавания символов и цифр</div>
+                        <img class="project-image" src="img/projects/neurallibrary/approx_sin.gif" alt="Project">
+                        <div class="project-title-inside">Аппроксимация произвольного сигнала многослойным персептроном</div>
+                    </div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/3f2LroRcBmQ?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Создание и обучение сети + быстрый тест на распознавание 5 цифр MNIST</div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/jm07ThaZk7Y?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Создание и обучение сети + тест на распознавание 25 зашумленных синусоидальных сигналов</div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/rcKQCrgeKz0?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Построение и обучение двух сетей: для распознавания цифр и символов + сохранение моделей и загрузка из файлов с валидацией</div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Построение нейронных сетей различной структуры на основе ООП-методологии</li>
+                        <li>Обучение нейронных сетей с заданной скоростью обучения, итерациями, эпохами, обучающими выборками</li>
+                        <li>Пользовательский интерфейс для построения многослойного персептрона с любым количеством слоев и нейронов</li>
+                        <li>Функция активации - сигмоида</li>
+                        <li>Законы распределения начальных значений весов: нормальный и равномерный</li>
+                        <li>Валидация модели с построением в реальном времени графиков ошибок, значений весов, входных и выходных сигналов</li>
+                        <li>Сохранение модели в файл на любом этапе обучения, загрузка из файла с просмотром конфигурации сети</li>
+                        <li>DLL для применения нейронных сетей в проектах</li>
+                        <li>Расчет производительности обучения с индикацией оставшегося времени до завершения</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Функционал демонстрационного проекта</div>
+                        <li>Обучение модели распознавать изображения. Протестирован набор MNIST в png формате. Точность 95.5% для 10 цифр. Тренировка выполнялась за 5 эпох по 50000 картинок, валидация - 5000)</li>
+                        <li>Обучение модели распознавать зашумленные синусоидальные сигналы</li>
+                        <li>Рисование мышью для обучения нейронной сети распознавать произвольные изображения пользователя</li>
+                        <li>Аппроксимация сигналов с помощью нейронной сети</li>
+
+                        <div style="margin-top: 30px;">
+                            <a href="https://github.com/alexfcoding/NeuralLibrary" class="btn-light">
+                                Код на GitHub
+                            </a>
+                            <a href="neurallibrary.html" class="btn-light">
+                                Страница проекта
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="project-title">Linux+Python+Flask+OpenCV&shy;+cuDNN онлайн редактор видеофайлов/изображений/потока с Youtube и IP-камер с задействованием средств OpenCV и моделей нейронных сетей: YOLO, Mask R-CNN, Caffe, DAIN, EDSR, LapSRN, FSRCNN, ESRGAN
+
+                </div>
+                <a href="https://github.com/alexfcoding/OpenCV-cuDNN-manual" class="btn-light">
+                    Мануал по компиляции OpenCV в Linux для Nvidia GPU
+                </a>
+                <a href="https://alexfcoding.github.io/PyCameraServer/" class="btn-light">
+                    Галерея с результатами обработки
+                </a>
+                <ul class="project-description">
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/pycameraserver/yolo/yolo_gif_preview3.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside" style="margin-bottom: 0px; margin-top: 0px;">Веб-страница редактора: распознавание объектов на видео нейронной сетью YOLO с GPU-ускорением на Linux-сервере</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/pycameraserver/upscalers/esrgan_demo4.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Веб-страница редактора: повышение разрешения загруженного изображения нейронной сетью ESRGAN с GPU-ускорением на Linux-сервере</div>
+
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/pycameraserver/cartoon/cartoon_gif_2.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Веб-страница редактора: стилизация под мультфильм</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/pycameraserver/cartoon/cartoon_gif.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Стилизация под мультфильм</div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/7jnovy0PbYs?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Главная страница / Распознавание и скачивание объектов YOLO zip-архивом / Отрисовка ASCII символами  (видеофайл, Youtube, IP-камера)</div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/qmRJDGIlSu8?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Колоризация черно-белого видео на Youtube / Повышение разрешения с помощью моделей: EDSR, LapSRN, FSRCNN, ESRGAN, PSNR / Шумоподавление </div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/56L-1P3G4ps?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Mask R-CNN: Распознавание объектов и сегментация / Редактирование фона / Замена фона анимацией / работа с оператором Кэнни</div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/4xOYij8w3vA?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Мультфильм-стилизация / Карандаш / Фильтр Собеля / Кластеризация k-means до двух цветов</div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/fQqg0Asfg7U?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Отображение объектов YOLO и их подсчет в классах</div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/KMvzZMihY9I?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Сегментация изображения с помощью Mask R-CNN</div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/kIqlhStgAXo?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Повышение частоты кадров в 8 раз с Depth-Aware Video Frame Interpolation</div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/MggruG6EAdM?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Колоризация видео 1920 года</div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Linux+Python+Flask+OpenCV&shy;+cuDNN онлайн редактор видеофайлов/изображений/потока с Youtube и IP-камер с предпросмотром кадра на веб-странице в реальном времени для распознавания объектов и их скачивания, сегментации, повышения разрешения, колоризации, стилизации, интерполяции кадров, с задействованием средств OpenCV и моделей нейронных сетей: YOLO, Mask R-CNN, Caffe, DAIN, EDSR, LapSRN, FSRCNN, ESRGAN</li>
+                        <li>Интерфейс пользователя состоит из двух страниц: главная и редактор. Главная - для выбора режима, загрузки файла или указания источника видео (Youtube, IP-камера), а также запуска редактора</li>
+                        <li>Одновременная работа пользователей на различных устройствах и вкладках браузера реализована предоставлением каждому пользователю уникального порта. При старте редактора для каждого пользователя на сервере запускается отдельный процесс</li>
+                        <li>Для работы некоторых режимов потребуется Linux и компиляция OpenCV с GPU-ускорением и библиотекой cuDNN, мануал тут: <a style="color: #ffa600;" href="github.com/alexfcoding/OpenCV-cuDNN-manual">github.com/alexfcoding/OpenCV&shy;-cuDNN-manual</a> </li>
+                        <li>Рендеры, созданные в редакторе можно посмотреть здесь: <a style="color: #ffa600;" href="alexfcoding.github.io/PyCameraServer">alexfcoding.github.io/Py&shy;CameraServer</a></li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Протестированная конфигурация</div>
+
+                        <li>OS: Ubuntu 20.04 LTS</li>
+                        <li>GPU: NVIDIA RTX 2060</li>
+                        <li>NVIDIA driver: 440</li>
+                        <li>OpenCV 4.3</li>
+                        <li>CUDA 10.0</li>
+                        <li>cuDNN 7.6.4</li>
+                        <li>Python 3.8</li>
+                        <li>Flask 1.1.2</li>
+                        <li>PyTorch 1.4.0</li>
+
+                        <div class="project-description-text-title" style="color:#ffa600;">Поддерживаемые форматы и источники</div>
+                        <li>Файлы изображений: png, jpg, gif</li>
+                        <li>Видеофайлы: mp4, avi, m4v, webm, mkv</li>
+                        <li>Youtube: URL-ссылка на видео или стрим</li>
+                        <li>IP камеры: URL-ссылка на MJPEG-камеру без логина и пароля</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Режимы обработки</div>
+                        <li>С применением нейронных сетей:</li>
+                        <ul>
+                            <li>(GPU/CPU) YOLO: Распознавание объектов в кадре, их подсчет в классах с возможностью скачивания объектов в zip-архив</li>
+                            <li>(GPU/CPU) YOLO: Размытие распознанных объектов и стилизация ASCII-символами</li>
+                            <li>(GPU/CPU) Mask R-CNN: Распознавание объектов и сегментация, подсчет в классах</li>
+                            <li>(GPU/CPU) Mask R-CNN: Преобразование фона за распознанными объектами в черно-белый цвет</li>
+                            <li>(GPU/CPU) Mask R-CNN: Гауссово размытие фона за распознанными объектами</li>
+
+                            <li>(GPU/CPU) Mask R-CNN: Замена фона анимацией из видеофайла</li>
+                            <li>(GPU) Caffe: Колоризация черно-белого видео нейронной сетью</li>
+                            <li>(CPU) EDSR / LapSRN / FSRCNN: повышение разрешения в 4 раза</li>
+                            <li>(GPU) ESRGAN / RRDB_PSNR: повышение разрешения в 4 раза с помощью обученных моделей: "FALCOON", "MANGA109", интерполяция "ESRGAN/RRDB_PSNR" с коэффициентами 0.2, 0.4, 0.6, 0.8). Модели можно выбирать на странице и добавлять новые (пока только правками в коде)</li>
+                            <li>(GPU) Depth-Aware Video Frame Interpolation: повышение плавности видео созданием новых промежуточных кадров (повышение fps x2, x4, x8)</li>
+                        </ul>
+
+                        <li>Средствами OpenCV без применения нейронных сетей:</li>
+                        <ul>
+                            <li>(CPU) Повышение резкости в сочетании с шумоподавлением</li>
+                            <li>(CPU) Рендер ASCII-символами</li>
+                            <li>(CPU) Стилизация под мультфильм</li>
+                            <li>(CPU) Стилизация "рисование карандашом"</li>
+                            <li>(CPU) Фильтр Собеля</li>
+                            <li>(CPU) Двухцветный режим с применением кластеризации k-means</li>
+                        </ul>
+
+                        <div class="project-description-text-title" style="color:#ffa600;">Главная страница</div>
+                        <li>Содержит видео-превью для каждого режима</li>
+                        <li>Запуск редактора с выбранным режимом обработки и источником</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Страница редактора</div>
+                        <li>Предпросмотр загруженного видео, файла изображения или источника на веб-странице в реальном времени</li>
+                        <li>Обработка кадров с выбранным режимом и настройками, скачивание файла с рендером</li>
+                        <li>Создание скриншотов.</li>
+                        <li>Перемотка видеофайла или Youtube-видео с помощью слайдера</li>
+                        <li>Переключение оригинала/обработанного кадра кнопкой на странице</li>
+                        <li>Смена режима обработки и позиций слайдеров настроек без перезагрузки страницы или остановки видео (AJAX)</li>
+                        <li>Просмотр свойств источника, прогресса обработки и статистики работы сервера в реальном времени (RAM, CPU, FPS, разрешение кадра)</li>
+                        <li>Остановка обработки на сервере по таймеру в случае, если пользователь закрыл вкладку в браузере</li>
+
+                        <div style="margin-top: 30px;">
+                            <a href="https://github.com/alexfcoding/OpenCV-cuDNN-manual" class="btn-light">
+                                Мануал по компиляции OpenCV в Linux для Nvidia GPU
+                            </a>
+                            <a href="https://alexfcoding.github.io/PyCameraServer/" class="btn-light">
+                                Галерея с результатами обработки
+                            </a>
+                            <a href="https://github.com/alexfcoding/PyCameraServer" class="btn-light">
+                                Код на GitHub
+                            </a>
+                            <a href="pycameraserver.html" class="btn-light">
+                                Страница проекта
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="project-title">Моделирование акустического сигнала упругих колебаний, формируемых в трубопроводе точечным воздействием на его поверхность</div>
+
+                <ul class="project-description">
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/acousticmodels/plots.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Оценка адекватности моделей сравнением с эмпирическими сигналами</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/acousticmodels/accumulation.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Выделение импульса на фоне помехи когерентным накоплением</div>
+
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/acousticmodels/preview_simple_model.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Выражение для "базовой" модели генерации амплитуд сигнала</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/acousticmodels/preview_model7.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Выражение для "полной" модели генерации амплитуд сигнала</div>
+                    <div class="project-title">Сгенерированный импульс для трубы длиной 5 метров
+
+                        <div style="text-align: center; margin-top: 15px;">
+                            <audio controls>
+                                <source src="sound/projects/acousticmodels/model_simple_5m.wav" type="audio/WAV">
+                              Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="project-title">Импульс, записанный на трубе длиной 5 метров
+                        <div style="text-align: center;  margin-top: 15px;">
+                            <audio controls>
+                                <source src="sound/projects/acousticmodels/real_pipe_5m.wav" type="audio/WAV">
+                              Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="project-title">Сгенерированный импульс для трубы длиной 190 метров
+                        <div style="text-align: center;  margin-top: 15px;">
+                            <audio controls>
+                                <source src="sound/projects/acousticmodels/model_full_190m.wav" type="audio/WAV">
+                              Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+
+                    <div class="project-title">Импульс, записанный на трубопроводе протяженностью 190 метров
+                        <div style="text-align: center;  margin-top: 15px;">
+                            <audio controls>
+                                <source src="sound/projects/acousticmodels/real_pipe_190m.wav" type="audio/WAV">
+                              Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Модели базируются на работах:</div>
+                        <li>Impact. Theory and Physical Properties of Impacted Bodies. Goldsmith W., 1960</li>
+                        <li>Vibration problems in engineering. Timoshenko S.P., Young, D.H., Weaver W., 1967</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Релизация в Matlab</li>
+                        <li>Синтез формы акустического сигнала, фиксируемого на поверхности трубопровода при точечном воздействии</li>
+                        <li>Моделирование последовательностей импульсов</li>
+                        <li>Когерентное накопление сигналов для повышения отношения сигнал/шум</li>
+                        <li>Установка параметров трубопровода и источника воздействия</li>
+                        <li>Построение формы сигнала и амплитудно-частотного спектра</li>
+                        <li>Построение 3d-спектрограммы сигнала</li>
+                        <li>Наложение помехи на моделируемый сигнал</li>
+                        <li>Сохранение моделируемого импульса в wav-файл</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Параметры модели:</div>
+                        <li>Координата воздействия и приема сигнала</li>
+                        <li>Масса трубопровода</li>
+                        <li>Протяженность трубопровода</li>
+                        <li>Толщина стенки трубы и ее диаметр</li>
+                        <li>Плотность материала стенки трубопровода</li>
+                        <li>Модуль Юнга</li>
+                        <li>Коэффициент жесткости основания трубопровода</li>
+                        <li>Длительность контакта источника колебаний с поверхностью трубы</li>
+                        <li>Число мод</li>
+                        <li>Частота дискретизации сигнала</li>
+                        <li>Длительность сигнала</li>
+                        <div class="project-description-title" style="color:#ffa600; text-align: center;">Публикации по проекту</div>
+                        <a class="btn-dark" href="articles/SimpleModel.pdf" target="_blank">
+                            <div>Математическая модель упругих колебаний трубопровода при ударном воздействии / "Международный научно-исследовательский журнал" – 2017
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+                        <a class="btn-dark" href="articles/FullModel.pdf" target="_blank">
+                            <div>Полная модель колебаний трубопровода при ударном воздействии / журнал "Омский научный вестник" - 2018
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+                        <a class="btn-dark" href="articles/ModelTest.pdf" target="_blank">
+                            <div>Оценка адекватности моделей колебаний трубопровода при ударном воздействии / журнал "Омский научный вестник" - 2018
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+                        <a class="btn-dark" href="articles/DefectModel.pdf" target="_blank">
+                            <div>Модель колебаний трубопровода при несанкционированном воздействии / журнал "Омский научный вестник" - 2019
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+                        <a class="btn-dark" href="articles/Thesis.pdf" target="_blank">
+                            Активный помехоустойчивый виброакустический способ контроля состояния магистрального трубопровода / диссертация - 2017
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+                        <a class="btn-dark" href="articles/Abstract.pdf" target="_blank">
+                            Активный помехоустойчивый виброакустический способ контроля состояния магистрального трубопровода / автореферат - 2017
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                         <div style="margin-top: 30px;">
+                            <a href="https://github.com/alexfcoding/AcousticModels" class="btn-light">
+                                Код на GitHub
+                            </a>
+                            <a href="acousticmodels.html" class="btn-light">
+                                Страница проекта
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="project-title">Биометрическая аутентификация пользователя по клавиатурному почерку с учетом силы нажатия на клавиши, параметров вибрации и движения рук</div>
+                <div class="project-title" style="color: #cecece;">Проект на сайте <a href="http://aiconstructor.ru/page14247083.html"><span style="color: #ffa600;"> aiconstructor.ru</span> </a> </div>
+
+                <ul class="project-description">
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/smartkeyboard/pr9.jpg" alt="Project">
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/smartkeyboard/keyboard_parts.jpg" alt="Project">
+                    </div>
+                    <div class="project-description-text" style="color:#ffa600;">Описание</div>
+                    <div class="project-description-text">
+                        <li>Прототип устройства для анализа клавиатурного почерка пользователя с применением дополнительного микроконтроллера и сенсоров</li>
+                        <li>Модификация не влияет на штатную работу клавиатуры, подключается к ПК через Arduino Leonardo </li>
+                        <li>Применен USB Host Shield модуль для имитации HID-клавиатуры в операционной системе и перехвата кодов клавиш</li>
+                        <li>Резистивные датчики давления регистрируют усилие нажатия на клавиши</li>
+                        <li>Пьезоэлемент непрерывно фиксирует вибрационные характеристики</li>
+                        <li>Рассчитываются временные периоды между нажатиями клавиш</li>
+                        <li>Определяются длительности удерживания клавиш и их коды</li>
+                        <li>Строится амплитудная функция вибрации</li>
+                        <li>Строятся функции усилия для каждого сенсора</li>
+                        <li>Обнаруживается одновременное нажатие нескольких клавиш</li>
+                        <li>Все данные (признаки) передаются в C# приложение посредством последовательного соединения с возможностью экспорта в XML-файлы</li>
+
+                        <div class="project-description-title" style="color:#ffa600; text-align: center;">Публикации по проекту</div>
+
+                        <a class="btn-dark" href="articles/KeyboardIdentification.pdf" target="_blank">
+                            <div>Идентификационный потенциал клавиатурного почерка с учетом параметров вибрации и силы нажатия на клавиши / журнал "Прикладная информатика" - 2017
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+
+                        <a class="btn-dark" href="articles/KeyboardRecognition.pdf" target="_blank">
+                            <div>Распознавание пользователей компьютерных систем по клавиатурному почерку и дополнительным признакам с помощью специальных датчиков / журнал "Датчики и системы" - 2017
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+
+                        <div style="margin-top: 30px;">
+                            <a href="smartkeyboard.html" class="btn-light">
+                                Страница проекта
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="project-title">Обнаружение дефектов зубчатого колеса колесной пары с помощью цифровой видеокамеры, магнитопорошковой индикации и C++ приложения с использованием OpenCV</div>
+                <ul class="project-description">
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/defectscanner/3.jpg" alt="Project">
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/defectscanner/1.jpg" alt="Project">
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/defectscanner/2.jpg" alt="Project">
+                    </div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Программная реализация на C++ Builder и OpenCV</li>
+                        <li>Решение базируется на основах математической статистики и HSV-преобразовании</li>
+                        <li>Режим работы с цифровой видеокамерой для обнаружения дефектов в реальном времени в процессе вращения зубчатого колеса</li>
+                        <li>Режим загрузки файлов изображений для анализа и настройки программы</li>
+                        <li>График распределения значений информативного признака дефекта по зубьям</li>
+                        <li>Просмотр фотографий из интерфейса программы</li>
+                        <li>Автоматический вывод номера зуба с обнаруженным дефектом во время сканирования</li>
+
+                        <div style="margin-top: 30px;">
+                            <a href="defectscanner.html" class="btn-light">
+                                Страница проекта
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="project-title">Фильтрация похожих изображений применением перцептивного хеширования</div>
+
+                <ul class="project-description">
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/hashed_harold.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Генерация хеша</div>
+
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/search_similar.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Поиск похожих изображений</div>
+
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/move_similar.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Перемещение похожих изображений в другую папку (правая колонка), оставлены только уникальные (левая)</div>
+
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/2_950px.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Порог чувствительности 2% (перемещены почти идентичные изображения)</div>
+
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/33_950px.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Порог чувствительности 33% (175 изображений из 186 были перемещены, остались только уникальные)</div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Небольшой скрипт на Python + OpenCV с предпросмотром процесса фильтрации изображений</li>
+                        <li>Перемещает все похожие изображения или их дубликаты из выбранной директории</li>
+                        <li>Пользователь задает путь к папке с изображениями, папку для перемещения, размер хеша и коэффициент чувствительности (от 0 до 100, где 0 - абсолютная схожесть изображений, только дубликаты будут перемещены)</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Алгоритм</div>
+                        <li>Сжатие изображения до размера NxN пикселей</li>
+                        <li>Конвертация пикселей в черно-белый</li>
+                        <li>Расчет среднего значения цвета всех пикселей</li>
+                        <li>Создание нового изображения (хеш): если значение цвета пикселя превышает среднее, то делаем его белым, в противном случае - черным</li>
+                        <li>Сравнение хешей всех изображений используя расстояние Хэмминга</li>
+                        <li>Изображения считаются схожими и перемещаются из указанной папки, если разница между количеством одинаковых пикселей не превышает порог чувствительности, заданный пользователем</li>
+
+                        <div style="margin-top: 30px;">
+                            <a href="https://github.com/alexfcoding/ImageCleaner" class="btn-light">
+                                Код на GitHub
+                            </a>
+                            <a href="imagehash.html" class="btn-light">
+                                Страница проекта
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="project-title">Отрисовка изображений ASCII-символами и египетскими глифами</div>
+
+                <ul class="project-description">
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/glyphrenderer/1.jpg" alt="Project">
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/glyphrenderer/2.jpg" alt="Project">
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/glyphrenderer/3.jpg" alt="Project">
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/glyphrenderer/4.jpg" alt="Project">
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/glyphrenderer/5.jpg" alt="Project">
+                    </div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Реализация на C# WPF</li>
+                        <li>Преобразует выбранные изображения в символьный вид</li>
+                        <li>Режим отрисовки египетскими глифами</li>
+                        <li>Режим отрисовки ASCII-символами</li>
+                        <li>Опции наложения символов на исходное изображение, либо на черный фон</li>
+                        <li>Выбор библиотек для рендера: GDI+, System.Windows.Media или Python-скрипт</li>
+                        <li>Настройка размера символов и размера сетки с помощью слайдеров</li>
+                        <li>Просмотр изображений в галерее до и после обработки</li>
+                        <li>Сохранение изображений в файл</li>
+
+                        <div style="margin-top: 30px;">
+                             <a href="https://github.com/alexfcoding/GlyphRenderer" class="btn-light">
+                                 Код на GitHub
+                             </a>
+                             <a href="glyphrenderer.html" class="btn-light">
+                                Страница проекта
+                             </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="project-title">RTS Sandbox: набор C# Unity классов для создания аркадных/стратегических игр со строительством, экономикой, добычей ресурсов и противоборством сторон</div>
+
+                <ul class="project-description">
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/MSCK4LUibh0?rel=0" gesture="media"  allow="encrypted-media;" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Пример разработанной игры с применением бесплатных ассетов моделей и текстур (Игрок / ИИ / ИИ)</div>
+
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/4vnaKTg5Cvk?rel=0" gesture="media"  allow="encrypted-media;" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Тест на 600 юнитах (ИИ против ИИ)</div>
+
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/AgjpS3nFU-U?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Пять противоборствующих фракций (ИИ против ИИ)</div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Реализация на C# в Unity 3D</li>
+                        <li>Представляет собой набор скриптов (24 класса) для создания аркадных/стратегических игр со строительством, простой экономикой и добычей ресурсов</li>
+                        <li>Вся логика работы и классы написаны с нуля, из сторонних ассетов только бесплатные 3d-модели, текстуры, звуки и некоторые эффекты</li>
+                        <li>Два режима работы: с игроком и автономно (ИИ против ИИ)</li>
+                        <li>Все объекты могут быть разрушаемыми</li>
+                        <li>Мир создается процедурно, без расстановки объектов на карте в редакторе</li>
+                        <li>Юниты, ракеты, бомбы, ресурсы и корабль игрока - твердые тела, подчиняющиеся внешним силам (перемещение, взрывы, столкновения)</li>
+                        <li>Производительность более 30fps в демонстрационном проекте обеспечивается при размещении до 1200 объектов в кадре на i7 9750h + RTX 2060</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Логика</div>
+                        <li>Принцип "все против всех"</li>
+                        <li>На карту помещается произвольное количество баз и ресурсы</li>
+                        <li>Объекты каждой фракции имеют свою уникальную подсветку для опознавания</li>
+                        <li>Противники воюют между своими базами и игроком</li>
+                        <li>Корабли-сборщики находят ресурсы и отвозят на свои базы</li>
+                        <li>Объекты ресурсов после сбора кораблем приобретают цвет его фракции</li>
+                        <li>На полученные ресурсы противники строят заводы для производства пехоты, кораблей, турелей</li>
+                        <li>С заданной вероятностью противники отправляют юниты атаковать корабль игрока</li>
+                        <li>Игрок управляет небольшим кораблем, может атаковать противников и их базы</li>
+                        <li>Игрок строит здания, юниты, добывает ресурсы и отвозит на базу</li>
+                        <li>Игрок групирует юниты и отдает приказы (следовать в любую точку карты, за объектом, либо атаковать)</li>
+                        <li>После уничтожения базы возможность строительства у фракции прекращается</li>
+                        <li>Любой юнит, включая игрока, может подбирать оружие (пулеметы, ракеты, бомбы)</li>
+                        <li>У каждого юнита есть уровень развития, который повышается при уничтожении противника</li>
+                        <li>Ресурс - физический объект, который надо подобрать, либо выбить из противника</li>
+
+                        <div style="margin-top: 30px;">
+                            <a href="https://github.com/alexfcoding/RTS-Sandbox" class="btn-light">
+                                Код на GitHub
+                            </a>
+                            <a href="rtssandbox.html" class="btn-light">
+                                Страница проекта
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </main>
+<footer id="main-footer">
+    &copy; 2020
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+

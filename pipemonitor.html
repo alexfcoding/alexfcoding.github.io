@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="css/main.css">
+    <title>Aleksander Fedotov</title>
+</head>
+<body id="bg-img">
+    <header>
+        <script src="https://kit.fontawesome.com/06c28a951d.js" crossorigin="anonymous"></script>
+
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="index.html" class="nav-link">
+                        Проекты
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="articles.html" class="nav-link">
+                        Научные публикации
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div class='menu-wide'>
+            <li class="nav-item-wide current">
+                <a href="index.html" class="nav-link-wide">
+                    Проекты
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="articles.html" class="nav-link-wide">
+                    Научные публикации
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="about.html" class="nav-link-wide">
+                    Контакты
+                </a>
+            </li>
+        </div>
+        <div id="boxshadow"></div>
+
+        <!-- <canvas id="canvas" width="200" height="200" class="main-image">
+            <canvas id="canvas2" width="200" height="200" class="main-image">
+                <img id="my-image" src="img/portrait2.jpg" alt="Александр Федотов">
+            </canvas>
+        </canvas> -->
+
+        <div class="projects">
+            <div class="item">
+                <div class="project-title">Прототип программно-аппаратного комплекса для распознавания состояния трубопровода анализом зондирующих акустических сигналов (по патенту на изобретение №2676386 с добавлением работы многослойного персептрона)</div>
+                <ul class="project-description">
+                    <img class="project-image" src="img/projects/pipemonitor/hw.jpg" alt="Project">
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/KMvTLcvwkfA?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Акустическое распознавание состояния объекта на демонстрационном стенде</div>
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/AHFEp_SgWSE?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Акустическое распознавание класса объекта, устанавливаемого на чувствительную поверхность</div>
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/uTnSedTINIE?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Эксперимент по распознаванию несанкционированной деятельности на водопроводе (имитация создания шурфа, установки оборудования на трубу для врезки)</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" style="margin-top: 0px;" src="img/projects/pipemonitor/pipe_cut7.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Распознавание сигналов тремя классификаторами</div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Разработка является практическим результатом исследования возможности автоматического обнаружения и распознавания несанкционированных воздействий на нефте-, газо- и водопроводы посредством периодического воздействия на него упругими колебаниями, их регистрации и классификации</li>
+                        <li>Возможна адаптация под обнаружение изменений в функционировании различных агрегатов и распознавании предметов, устанавливаемых на чувствительную поверхность</li>
+                        <li>Одна из потенциальных областей применения - охранные комплексы, так как система реагирует на бесшумное прикосновение к контролируемому объекту и изменение его характеристик (поворот задвижки, изъятие элементов из системы и т.д.)</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Принцип работы</div>
+                        <li>Возбуждение и регистрация упругих колебаний в контролируемом объекте с помощью микроконтроллера, генератора импульсов, пьезоэлектрического акселерометра</li>
+                        <li>Передача накопленных сигналов от микроконтроллера в C# WinForms-приложение через USB -> COM-порт для тренировки БПФ-классификаторов и нейронной сети</li>
+                        <li>Обучение распознаванию заключается в формировании "эталонных" состояний контролируемого объекта посредством его зондирования импульсами упругих колебаний в штатном режиме с последующим внедрением имитаторов состояний</li>
+                        <li>Распознавание текущего состояния объекта в C#-приложении посредством непрерывного сравнения поступающих импульсов с известными классами сигналов</li>
+                        <li>Построение многослойного персептрона, его обучение и работа реализованы подключением моей небольшой DLL-библиотеки: <a href="https://github.com/alexfcoding/NeuralLibrary"><span style="color: #ffa600;">github.com/alexfcoding/Neural&shy;Library</span> </a></li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Режимы работы</div>
+                        <li>Обнаружение и распознавание состояния объекта оборудованием в связке с ПО на C# (USB -> COM-порт для связи)</li>
+                        <li>Обнаружение и распознавание объектов на чувствительной поверхности оборудованием в связке с ПО на C# (USB -> COM-порт для связи)</li>
+                        <li>Автономное обнаружение отклонения состояния объекта от нормы с помощью оборудования без подключения к ПК. Распознавание двух состояний: "Штатное"/"Отклонение"</li>
+                        <li>Программный режим: загрузка и анализ записанных WAV-файлов для исследования и классификации</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Аппаратная часть</div>
+                        <li>Микроконтроллер на Atmel SAM3X8E ARM Cortex-M3 (Arduino Due) для генерации сигнала, его регистрации с помощью АЦП, когерентного накопления, корреляции, отображения его формы на дисплее, а также передачи сигналов C# приложению для обработки через COM-порт</li>
+                        <li>Генераторы периодических импульсов (электромагнитный актуатор - работа в дальней зоне на дистанции более 300 м, электромагнитное реле - для демонстрационного стенда)</li>
+                        <li>Пьезоэлектрический акселерометр + усилитель сигнала</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Программная часть (C#)</div>
+                        <li>Создание списка из любого количества состояний (распознаваемых классов) и сопоставление соответствующих изображений для индикации результата распознавания</li>
+                        <li>Прием накопленных импульсов от микроконтроллера через COM-порт или загрузка записей из WAV-файлов</li>
+                        <li>Повышение отношения сигнал/шум алгоритмом когерентного накопления импульсов</li>
+                        <li>Быстрое преобразование Фурье для сигналов. Построение амплитудного спектра текущего сигнала, его формы, доверительных интервалов</li>
+                        <li>Обучение нейронной сети на сигналах</li>
+                        <li>Обучение БПФ классификаторов</li>
+                        <li>Опция извлечения признаков состояний</li>
+                        <li>Распознавание состояний на основе решений от БПФ классификаторов и нейронной сети</li>
+                        <li>Вывод изображения распознанного состояния на экран</li>
+
+                        <div class="project-description-text-title" style="color:#ffa600; text-align: center;">Основные публикации по проекту</div>
+
+                        <a class="btn-dark" href="articles/PatentRU2676386.pdf" target="_blank">
+                            Способ обнаружения несанкционированных воздействий на трубопровод : пат. 2676386 Рос. Федерация - 2018
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <a class="btn-dark" href="articles/PatentRU2463590.pdf" target="_blank">
+                            <div>Способ обнаружения изменений параметров среды в окружении заглубленного магистрального продуктопровода : пат. 2463590 Рос. Федерация - 2012
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Algorithm.pdf" target="_blank" >
+                            <div>Алгоритм обнаружения несанкционированных воздействий на трубопровод / журнал "Энергетик" (ВАК) - 2019
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+
+                        <a class="btn-dark" href="articles/ErrorProbability.pdf" target="_blank">
+                            О вероятности ошибки обнаружения несанкционированных воздействий на трубопровод / журнал "Омский научный вестник" (ВАК) - 2019
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Identification.pdf" target="_blank">
+                            Идентификация несанкционированных воздействий на трубопровод / журнал "Энергосбережение и водоподготовка" (ВАК) - 2018
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <a class="btn-dark" href="articles/NoiseStability.pdf" target="_blank">
+                            О помехоустойчивости активного виброакустического способа / журнал "Омский научный вестник" (ВАК) - 2018
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Spectrum.pdf" target="_blank">
+                            <div>Амплитудно-частотный спектр виброакустического сигнала при ударном воздействии на трубопровод / журнал "Энергосбережение и водоподготовка" (ВАК) - 2018
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Regression.pdf" target="_blank">
+                            <div>Влияние факторов окружающей среды на распространение упругих колебаний в трубопроводе / журнал "Омский научный вестник" (ВАК) - 2018
+                                <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                            </div>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Thesis.pdf" target="_blank">
+                            Активный помехоустойчивый виброакустический способ контроля состояния магистрального трубопровода / диссертация - 2017
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <a class="btn-dark" href="articles/Abstract.pdf" target="_blank">
+                            Активный помехоустойчивый виброакустический способ контроля состояния магистрального трубопровода / автореферат - 2017
+                            <i class="fas fa-file-pdf" style="color:rgb(255, 0, 0)"></i>
+                        </a>
+
+                        <div style="margin-top: 30px;">
+                            <a href="index.html" class="btn-light">
+                                Все проекты
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+<footer id="main-footer">
+    &copy; 2020
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+

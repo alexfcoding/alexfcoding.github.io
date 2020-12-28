@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="css/main.css">
+    <title>Aleksander Fedotov</title>
+</head>
+<body id="bg-img">
+    <header>
+        <script src="https://kit.fontawesome.com/06c28a951d.js" crossorigin="anonymous"></script>
+
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="index.html" class="nav-link">
+                        Проекты
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="articles.html" class="nav-link">
+                        Научные публикации
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts.html" class="nav-link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div class='menu-wide'>
+            <li class="nav-item-wide current">
+                <a href="index.html" class="nav-link-wide">
+                    Проекты
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="articles.html" class="nav-link-wide">
+                    Научные публикации
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="contacts.html" class="nav-link-wide">
+                    Контакты
+                </a>
+            </li>
+        </div>
+        <div id="boxshadow"></div>
+
+        <!-- <canvas id="canvas" width="200" height="200" class="main-image">
+            <canvas id="canvas2" width="200" height="200" class="main-image">
+                <img id="my-image" src="img/portrait2.jpg" alt="Александр Федотов">
+            </canvas>
+        </canvas> -->
+
+        <div class="projects">
+            <div class="item">
+                <div class="project-title">С# DLL библиотека с демонстрационным приложением для создания, тренировки, валидации моделей нейронных сетей</div>
+                <ul class="project-description">
+                    <div style="text-align: center;">
+                        <img class="project-image-small" src="img/projects/neurallibrary/digits_cut_2.gif" alt="Project">
+                        <img class="project-image-small" src="img/projects/neurallibrary/icons_cut_2.gif" alt="Project">
+                        <div class="project-title-inside">Тест распознавания символов и цифр</div>
+                        <img class="project-image" src="img/projects/neurallibrary/approx_sin.gif" alt="Project">
+                        <div class="project-title-inside">Аппроксимация произвольного сигнала многослойным персептроном</div>
+                    </div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/3f2LroRcBmQ?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Создание и обучение сети + быстрый тест на распознавание 5 цифр MNIST</div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/jm07ThaZk7Y?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Создание и обучение сети + тест на распознавание 25 зашумленных синусоидальных сигналов</div>
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/rcKQCrgeKz0?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Построение и обучение двух сетей: для распознавания цифр и символов + сохранение моделей и загрузка из файлов с валидацией</div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Построение нейронных сетей различной структуры на основе ООП-методологии</li>
+                        <li>Тренировка нейронных сетей с заданной скоростью обучения, итерациями, эпохами, обучающими выборками</li>
+                        <li>Пользовательский интерфейс для построения многослойного персептрона с любым количеством слоев и нейронов</li>
+                        <li>Функция активации - сигмоида</li>
+                        <li>Законы распределения начальных значений весов: нормальный и равномерный</li>
+                        <li>Валидация модели с построением в реальном времени графиков ошибок, значений весов, входных и выходных сигналов</li>
+                        <li>Сохранение модели в файл на любом этапе обучения, загрузка из файла с просмотром конфигурации сети</li>
+                        <li>DLL для применения нейронных сетей в проектах</li>
+                        <li>Расчет производительности обучения с индикацией оставшегося времени до завершения</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Функционал демонстрационного проекта</div>
+                        <li>Обучение модели распознавать изображения. Протестирован набор MNIST в png формате. Точность 95.5% для 10 цифр. Тренировка выполнялась за 5 эпох по 50000 картинок, валидация - 5000)</li>
+                        <li>Обучение модели распознавать зашумленные синусоидальные сигналы</li>
+                        <li>Рисование мышью для обучения нейронной сети распознавать произвольные изображения пользователя</li>
+                        <li>Аппроксимация сигналов с помощью нейронной сети</li>
+
+                        <div style="margin-top: 30px;">
+                            <a href="https://github.com/alexfcoding/NeuralLibrary" class="btn-light">
+                                Код на GitHub
+                            </a>
+                            <a href="index.html" class="btn-light">
+                                Все проекты
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </main>
+<footer id="main-footer">
+    &copy; 2020
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+

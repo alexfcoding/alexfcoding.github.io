@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="css/main.css">
+    <title>Aleksander Fedotov</title>
+</head>
+<body id="bg-img">
+    <header>
+        <script src="https://kit.fontawesome.com/06c28a951d.js" crossorigin="anonymous"></script>
+
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item current">
+                    <a href="index.html" class="nav-link">
+                        Проекты
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="articles.html" class="nav-link">
+                        Научные публикации
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacts.html" class="nav-link">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <div class='menu-wide'>
+            <li class="nav-item-wide current">
+                <a href="index.html" class="nav-link-wide">
+                    Проекты
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="articles.html" class="nav-link-wide">
+                    Научные публикации
+                </a>
+            </li>
+            <li class="nav-item-wide">
+                <a href="contacts.html" class="nav-link-wide">
+                    Контакты
+                </a>
+            </li>
+        </div>
+        <div id="boxshadow"></div>
+
+        <!-- <canvas id="canvas" width="200" height="200" class="main-image">
+            <canvas id="canvas2" width="200" height="200" class="main-image">
+                <img id="my-image" src="img/portrait2.jpg" alt="Александр Федотов">
+            </canvas>
+        </canvas> -->
+
+        <div class="projects">
+            <div class="item">
+                <div class="project-title">RTS Sandbox: набор C# Unity классов для создания аркадных/стратегических игр со строительством, экономикой, добычей ресурсов и противоборством сторон</div>
+
+                <ul class="project-description">
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/MSCK4LUibh0?rel=0" gesture="media"  allow="encrypted-media;" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Пример разработанной игры с применением бесплатных ассетов моделей и текстур (Игрок / ИИ / ИИ)</div>
+
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/4vnaKTg5Cvk?rel=0" gesture="media"  allow="encrypted-media;" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Тест на 600 юнитах (ИИ против ИИ)</div>
+
+
+                    <div class="video-container">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/AgjpS3nFU-U?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-title-inside">Пять противоборствующих фракций (ИИ против ИИ)</div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Реализация на C# в Unity 3D</li>
+                        <li>Представляет собой набор скриптов (24 класса) для создания аркадных/стратегических игр со строительством, простой экономикой и добычей ресурсов</li>
+                        <li>Вся логика работы и классы написаны с нуля, из сторонних ассетов только бесплатные 3d-модели, текстуры, звуки и некоторые эффекты</li>
+                        <li>Два режима работы: с игроком и автономно (ИИ против ИИ)</li>
+                        <li>Все объекты могут быть разрушаемыми</li>
+                        <li>Мир создается процедурно, без расстановки объектов на карте в редакторе</li>
+                        <li>Юниты, ракеты, бомбы, ресурсы и корабль игрока - твердые тела, подчиняющиеся внешним силам (перемещение, взрывы, столкновения)</li>
+                        <li>Производительность более 30fps в демонстрационном проекте обеспечивается при размещении до 1200 объектов в кадре на i7 9750h + RTX 2060</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Логика</div>
+                        <li>Принцип "все против всех"</li>
+                        <li>На карту помещается произвольное количество баз и ресурсы</li>
+                        <li>Объекты каждой фракции имеют свою уникальную подсветку для опознавания</li>
+                        <li>Противники воюют между своими базами и игроком</li>
+                        <li>Корабли-сборщики находят ресурсы и отвозят на свои базы</li>
+                        <li>Объекты ресурсов после сбора кораблем приобретают цвет его фракции</li>
+                        <li>На полученные ресурсы противники строят заводы для производства пехоты, кораблей, турелей</li>
+                        <li>С заданной вероятностью противники отправляют юниты атаковать корабль игрока</li>
+                        <li>Игрок управляет небольшим кораблем, может атаковать противников и их базы</li>
+                        <li>Игрок строит здания, юниты, добывает ресурсы и отвозит на базу</li>
+                        <li>Игрок групирует юниты и отдает приказы (следовать в любую точку карты, за объектом, либо атаковать)</li>
+                        <li>После уничтожения базы возможность строительства у фракции прекращается</li>
+                        <li>Любой юнит, включая игрока, может подбирать оружие (пулеметы, ракеты, бомбы)</li>
+                        <li>У каждого юнита есть уровень развития, который повышается при уничтожении противника</li>
+                        <li>Ресурс - физический объект, который надо подобрать, либо выбить из противника</li>>
+
+                        <div style="margin-top: 30px;">
+                            <a href="https://github.com/alexfcoding/RTS-Sandbox" class="btn-light">
+                                Код на GitHub
+                            </a>
+                            <a href="index.html" class="btn-light">
+                                Все проекты
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </main>
+<footer id="main-footer">
+    &copy; 2020
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+
