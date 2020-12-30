@@ -195,9 +195,9 @@ h3 {
   box-shadow: 7px 7px 7px black;
   margin-bottom: 2rem;
   text-align: center;
-  max-width: 270px;
+  max-width: 260px;
   font-size: 1.5rem;
-  padding: 7px 10px 7px 10px;
+  padding: 4px 10px 4px 10px;
   background: var(--fg-color);
   background-size: 100%;
   border-radius: 20px;
@@ -273,11 +273,11 @@ main .icons {
   /* margin-bottom: 2rem; */
   text-align: center;
   background: var(--fg-color);
-  max-width: 270px;
+  max-width: 260px;
   border-radius: 20px;
   display: block;
   margin: 0px auto;
-  padding: 9px 5px 6px 5px;
+  padding: 6px 5px 3px 5px;
   color: #ebebeb;
 }
 
@@ -556,7 +556,7 @@ main .icons a:hover {
   }
 
   main .lg-heading {
-    padding: 7px 10px 7px 10px;
+    padding: 4px 10px 4px 10px;
   }
 
   main .sm-heading {
