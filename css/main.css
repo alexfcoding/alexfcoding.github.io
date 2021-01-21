@@ -168,6 +168,7 @@ body {
 
 body#bg-img {
   background: url(../img/background.jpg);
+  background-color:rgb(27, 27, 27);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -291,15 +292,15 @@ main .icons a:hover {
 }
 
 .main-image {
-  /* grid-area: bioimage; */
-  border-radius: 20%;
-  border: #ffa600 2px solid;
+  border-radius: 15%;
+  /* border: rgba(42, 42, 42, 0.9) 3px solid; */
+  border:#ffa600 3px solid;
   box-shadow: 7px 7px 10px black;
   display: block;
   margin: 0 auto;
   margin-bottom: 0px;
-  /* width: 250px;
-  height: 250px; */
+  max-width: 260px;
+  max-height: 260px;
 }
 
 .video-container {
@@ -322,13 +323,6 @@ main .icons a:hover {
 }
 
 .project-image {
-  /* box-shadow: 7px 7px 10px black;
-  width: 100%;
-  border-radius: 10px;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 10px auto; */
   box-shadow: 7px 7px 10px black;
   margin-left: auto;
   margin-right: auto;
@@ -547,7 +541,8 @@ main .icons a:hover {
   }
 
   .main-image {
-    /* max-width: 200px; */
+    max-width: 240px;
+    max-height: 240px;
   }
 
   .project-image-small {
