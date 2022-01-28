@@ -88,20 +88,26 @@
         </h2>
 
         <h2 class="sm-heading " style="text-align: justify;">
-            <span style="font-weight: bold;  ">Интересы:</span> разработка программно-аппаратных комплексов | выполнение научно-исследовательских работ | публикации в научных журналах | патентование изобретений | обработка и распознавание сигналов, изображений | машинное обучение | программирование игр, десктоп и веб-приложений
+            <span style="font-weight: bold;  ">Интересы:</span> 
+            машинное обучение |
+            цифровая обработка и распознавание сигналов, изображений |  
+            разработка веб-сервисов на Python |   
+            создание программно-аппаратных комплексов |
+            выполнение научно-исследовательских работ
         </h2>
 
         <h2 class="sm-heading" style="text-align: justify;">
-            <span style="font-weight: bold;">Языки и технологии:</span> <span style="color: #ffa600;">C#:</span> WinForms, WPF, Unity 3D |
-            <span style="color: #ffa600;">Python+Linux:</span> OpenCV, Flask | <span style="color: #ffa600;">Web:</span> HTML, CSS, JS |
+            <span style="font-weight: bold;">Языки и технологии: </span>           
+             
+            <span style="color: #ffa600;">Python / Web:</span> Keras / Tensorflow, OpenCV, Flask, HTML, CSS, JS |
+            <span style="color: #ffa600;">C#:</span> WinForms, WPF, Unity 3D |           
             <span style="color: #ffa600;">Arduino:</span> модули, датчики, работа с АЦП |
-            <span style="color: #ffa600;">Моделирование:</span> Matlab |
-            <span style="color: #ffa600;">Нейронные сети:</span> NeuralLibrary (самописная C# библиотека), YOLO, MASK R-CNN, ESRGAN, DAIN и др. | <span style="color: #ffa600;">Неразрушающий контроль:</span> патенты на изобретение 2676386, 2463590, 2490153, 2687177
+            <span style="color: #ffa600;">Неразрушающий контроль:</span> патенты на изобретение 2676386, 2463590, 2490153, 2687177
         </h2>
 
         <div class="projects">
             <div class="item">
-                <div class="project-title">Прототип программно-аппаратного комплекса для распознавания состояния трубопровода анализом зондирующих акустических сигналов (по патенту на изобретение №2676386 с добавлением работы многослойного персептрона)</div>
+                <div class="project-title">(C#) Прототип программно-аппаратного комплекса для распознавания состояния трубопровода анализом зондирующих акустических сигналов (патент на изобретение №2676386 с добавлением работы нейронной сети)</div>
                 <ul class="project-description">
                     <img class="project-image" src="img/projects/pipemonitor/hw.jpg" alt="Project">
                     <div class="video-container">
@@ -116,7 +122,6 @@
                         <iframe class="video-iframe" src="https://www.youtube.com/embed/uTnSedTINIE?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="project-title-inside">Эксперимент по распознаванию несанкционированной деятельности на водопроводе (имитация создания шурфа, установки оборудования на трубу для врезки)</div>
-
                     <div style="text-align: center;">
                         <img class="project-image" style="margin-top: 0px;" src="img/projects/pipemonitor/pipe_cut7.gif" alt="Project">
                     </div>
@@ -132,7 +137,7 @@
                         <li>Передача накопленных сигналов от микроконтроллера в C# WinForms-приложение через USB -> COM-порт для тренировки БПФ-классификаторов и нейронной сети</li>
                         <li>Обучение распознаванию заключается в формировании "эталонных" состояний контролируемого объекта посредством его зондирования импульсами упругих колебаний в штатном режиме с последующим внедрением имитаторов состояний</li>
                         <li>Распознавание текущего состояния объекта в C#-приложении посредством непрерывного сравнения поступающих импульсов с известными классами сигналов</li>
-                        <li>Построение многослойного персептрона, его обучение и работа реализованы подключением моей небольшой DLL-библиотеки: <a href="https://github.com/alexfcoding/NeuralLibrary"><span style="color: #ffa600;">github.com/alexfcoding/Neural&shy;Library</span> </a></li>
+                        <li>Построение нейронной сети, ее обучение и работа реализованы подключением моей небольшой DLL-библиотеки: <a href="https://github.com/alexfcoding/NeuralLibrary"><span style="color: #ffa600;">github.com/alexfcoding/Neural&shy;Library</span> </a></li>
                         <div class="project-description-text-title" style="color:#ffa600;">Режимы работы</div>
                         <li>Обнаружение и распознавание состояния объекта оборудованием в связке с ПО на C# (USB -> COM-порт для связи)</li>
                         <li>Обнаружение и распознавание объектов на чувствительной поверхности оборудованием в связке с ПО на C# (USB -> COM-порт для связи)</li>
@@ -219,7 +224,7 @@
             </div>
 
             <div class="item">
-                <div class="project-title">С# DLL библиотека с демонстрационным приложением для создания, тренировки, валидации моделей нейронных сетей</div>
+                <div class="project-title">(С#) DLL библиотека с демонстрационным приложением для создания, тренировки, валидации моделей нейронных сетей</div>
                 <ul class="project-description">
                     <div style="text-align: center;">
                         <img class="project-image-small" src="img/projects/neurallibrary/digits_cut_2.gif" alt="Project">
@@ -274,8 +279,7 @@
             </div>
 
             <div class="item">
-                <div class="project-title">Linux+Python+Flask+OpenCV&shy;+cuDNN онлайн редактор видеофайлов/изображений/потока с Youtube и IP-камер с задействованием средств OpenCV и моделей нейронных сетей: YOLO, Mask R-CNN, Caffe, DAIN, EDSR, LapSRN, FSRCNN, ESRGAN
-
+                <div class="project-title">(Python / Flask / OpenCV&shy; / cuDNN / Linux) Онлайн редактор видеофайлов/изображений/потока с Youtube и IP-камер с задействованием моделей нейронных сетей: YOLO, Mask R-CNN, Caffe, DAIN, EDSR, LapSRN, FSRCNN, ESRGAN
                 </div>
                 <a href="https://github.com/alexfcoding/OpenCV-cuDNN-manual" class="btn-light">
                     Мануал по компиляции OpenCV в Linux для Nvidia GPU
@@ -284,27 +288,10 @@
                     Галерея с результатами обработки
                 </a>
                 <ul class="project-description">
-                    <div style="text-align: center;">
+                    <!-- <div style="text-align: center;">
                         <img class="project-image" src="img/projects/pycameraserver/yolo/yolo_gif_preview3.gif" alt="Project">
                     </div>
-                    <div class="project-title-inside" style="margin-bottom: 0px; margin-top: 0px;">Веб-страница редактора: распознавание объектов на видео нейронной сетью YOLO с GPU-ускорением на Linux-сервере</div>
-
-                    <div style="text-align: center;">
-                        <img class="project-image" src="img/projects/pycameraserver/upscalers/esrgan_demo4.gif" alt="Project">
-                    </div>
-                    <div class="project-title-inside">Веб-страница редактора: повышение разрешения загруженного изображения нейронной сетью ESRGAN с GPU-ускорением на Linux-сервере</div>
-
-
-                    <div style="text-align: center;">
-                        <img class="project-image" src="img/projects/pycameraserver/cartoon/cartoon_gif_2.gif" alt="Project">
-                    </div>
-                    <div class="project-title-inside">Веб-страница редактора: стилизация под мультфильм</div>
-
-                    <div style="text-align: center;">
-                        <img class="project-image" src="img/projects/pycameraserver/cartoon/cartoon_gif.gif" alt="Project">
-                    </div>
-                    <div class="project-title-inside">Стилизация под мультфильм</div>
-
+                    <div class="project-title-inside" style="margin-bottom: 0px; margin-top: 0px;">Веб-страница редактора: распознавание объектов на видео нейронной сетью YOLO с GPU-ускорением на Linux-сервере</div> -->
                     <div class="video-container">
                         <iframe class="video-iframe" src="https://www.youtube.com/embed/7jnovy0PbYs?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
                     </div>
@@ -318,13 +305,28 @@
                     <div class="video-container">
                         <iframe class="video-iframe" src="https://www.youtube.com/embed/56L-1P3G4ps?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
                     </div>
-                    <div class="project-title-inside">Mask R-CNN: Распознавание объектов и сегментация / Редактирование фона / Замена фона анимацией / работа с оператором Кэнни</div>
-
+                    <div class="project-title-inside">Mask R-CNN: Распознавание объектов и сегментация / Редактирование фона / Замена фона анимацией / работа с оператором Canny</div>
+                    
                     <div class="video-container">
                         <iframe class="video-iframe" src="https://www.youtube.com/embed/4xOYij8w3vA?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
                     </div>
-                    <div class="project-title-inside">Мультфильм-стилизация / Карандаш / Фильтр Собеля / Кластеризация k-means до двух цветов</div>
+                    <div class="project-title-inside">Аниме-стилизация / Карандаш / Фильтр Собеля / Кластеризация k-means до двух цветов</div>
 
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/pycameraserver/upscalers/esrgan_demo4.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Веб-страница редактора: повышение разрешения загруженного изображения нейронной сетью ESRGAN с GPU-ускорением на Linux-сервере</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/pycameraserver/cartoon/cartoon_gif_2.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Веб-страница редактора: стилизация под Аниме</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/pycameraserver/cartoon/cartoon_gif.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Стилизация под Аниме</div>                   
+                    
                     <div class="video-container">
                         <iframe class="video-iframe" src="https://www.youtube.com/embed/fQqg0Asfg7U?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
                     </div>
@@ -347,7 +349,7 @@
 
                     <div class="project-description-text">
                         <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
-                        <li>Linux+Python+Flask+OpenCV&shy;+cuDNN онлайн редактор видеофайлов/изображений/потока с Youtube и IP-камер с предпросмотром кадра на веб-странице в реальном времени для распознавания объектов и их скачивания, сегментации, повышения разрешения, колоризации, стилизации, интерполяции кадров, с задействованием средств OpenCV и моделей нейронных сетей: YOLO, Mask R-CNN, Caffe, DAIN, EDSR, LapSRN, FSRCNN, ESRGAN</li>
+                        <li>Linux / Python / Flask / OpenCV&shy; / cuDNN онлайн редактор видеофайлов/изображений/потока с Youtube и IP-камер с предпросмотром кадра на веб-странице в реальном времени для распознавания объектов и их скачивания, сегментации, повышения разрешения, колоризации, стилизации, интерполяции кадров, с задействованием средств OpenCV и моделей нейронных сетей: YOLO, Mask R-CNN, Caffe, DAIN, EDSR, LapSRN, FSRCNN, ESRGAN</li>
                         <li>Интерфейс пользователя состоит из двух страниц: главная и редактор. Главная - для выбора режима, загрузки файла или указания источника видео (Youtube, IP-камера), а также запуска редактора</li>
                         <li>Одновременная работа пользователей на различных устройствах и вкладках браузера реализована предоставлением каждому пользователю уникального порта. При старте редактора для каждого пользователя на сервере запускается отдельный процесс</li>
                         <li>Для работы некоторых режимов потребуется Linux и компиляция OpenCV с GPU-ускорением и библиотекой cuDNN, мануал тут: <a style="color: #ffa600;" href="github.com/alexfcoding/OpenCV-cuDNN-manual">github.com/alexfcoding/OpenCV&shy;-cuDNN-manual</a> </li>
@@ -427,10 +429,92 @@
             </div>
 
             <div class="item">
-                <div class="project-title">Моделирование акустического сигнала упругих колебаний, формируемых в трубопроводе точечным воздействием на его поверхность</div>
-
+                <div class="project-title">(С++ / OpenCV) Обнаружение дефектов зубчатого колеса колесной пары с помощью цифровой видеокамеры и магнитопорошковой индикации</div>
                 <ul class="project-description">
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/defectscanner/3.jpg" alt="Project">
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/defectscanner/1.jpg" alt="Project">
+                    </div>
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/defectscanner/2.jpg" alt="Project">
+                    </div>
 
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>                        
+                        <li>Решение базируется на основах математической статистики и HSV-преобразовании</li>
+                        <li>Режим работы с цифровой видеокамерой для обнаружения дефектов в реальном времени в процессе вращения зубчатого колеса</li>
+                        <li>Режим загрузки файлов изображений для анализа и настройки программы</li>
+                        <li>График распределения значений информативного признака дефекта по зубьям</li>
+                        <li>Просмотр фотографий из интерфейса программы</li>
+                        <li>Автоматический вывод номера зуба с обнаруженным дефектом во время сканирования</li>
+
+                        <div style="margin-top: 30px;">
+                            <a href="defectscanner.html" class="btn-light">
+                                Страница проекта
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="project-title">(Python / OpenCV) Фильтрация похожих изображений применением перцептивного хеширования</div>
+                <ul class="project-description">
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/hashed_harold.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Генерация хеша</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/search_similar.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Поиск похожих изображений</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/move_similar.gif" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Перемещение похожих изображений в другую папку (правая колонка), оставлены только уникальные (левая)</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/2_950px.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Порог чувствительности 2% (перемещены почти идентичные изображения)</div>
+
+                    <div style="text-align: center;">
+                        <img class="project-image" src="img/projects/imagecleaner/33_950px.jpg" alt="Project">
+                    </div>
+                    <div class="project-title-inside">Порог чувствительности 33% (175 изображений из 186 были перемещены, остались только уникальные)</div>
+
+                    <div class="project-description-text">
+                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
+                        <li>Небольшой скрипт на Python + OpenCV с предпросмотром процесса фильтрации изображений</li>
+                        <li>Перемещает все похожие изображения или их дубликаты из выбранной директории</li>
+                        <li>Пользователь задает путь к папке с изображениями, папку для перемещения, размер хеша и коэффициент чувствительности (от 0 до 100, где 0 - абсолютная схожесть изображений, только дубликаты будут перемещены)</li>
+                        <div class="project-description-text-title" style="color:#ffa600;">Алгоритм</div>
+                        <li>Сжатие изображения до размера NxN пикселей</li>
+                        <li>Конвертация пикселей в черно-белый</li>
+                        <li>Расчет среднего значения цвета всех пикселей</li>
+                        <li>Создание нового изображения (хеш): если значение цвета пикселя превышает среднее, то делаем его белым, в противном случае - черным</li>
+                        <li>Сравнение хешей всех изображений используя расстояние Хэмминга</li>
+                        <li>Изображения считаются схожими и перемещаются из указанной папки, если разница между количеством одинаковых пикселей не превышает порог чувствительности, заданный пользователем</li>
+
+                        <div style="margin-top: 30px;">
+                            <a href="https://github.com/alexfcoding/ImageCleaner" class="btn-light">
+                                Код на GitHub
+                            </a>
+                            <a href="imagehash.html" class="btn-light">
+                                Страница проекта
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="project-title">(Matlab) Моделирование акустического сигнала упругих колебаний, формируемых в трубопроводе точечным воздействием на его поверхность</div>
+                <ul class="project-description">
                     <div style="text-align: center;">
                         <img class="project-image" src="img/projects/acousticmodels/plots.jpg" alt="Project">
                     </div>
@@ -441,7 +525,6 @@
                     </div>
                     <div class="project-title-inside">Выделение импульса на фоне помехи когерентным накоплением</div>
 
-
                     <div style="text-align: center;">
                         <img class="project-image" src="img/projects/acousticmodels/preview_simple_model.jpg" alt="Project">
                     </div>
@@ -450,9 +533,10 @@
                     <div style="text-align: center;">
                         <img class="project-image" src="img/projects/acousticmodels/preview_model7.jpg" alt="Project">
                     </div>
-                    <div class="project-title-inside">Выражение для "полной" модели генерации амплитуд сигнала</div>
-                    <div class="project-title">Сгенерированный импульс для трубы длиной 5 метров
 
+                    <div class="project-title-inside">Выражение для "полной" модели генерации амплитуд сигнала</div>
+
+                    <div class="project-title">Модель импульса для трубы длиной 5 метров
                         <div style="text-align: center; margin-top: 15px;">
                             <audio controls>
                                 <source src="sound/projects/acousticmodels/model_simple_5m.wav" type="audio/WAV">
@@ -470,7 +554,7 @@
                         </div>
                     </div>
 
-                    <div class="project-title">Сгенерированный импульс для трубы длиной 190 метров
+                    <div class="project-title">Модель импульса для трубы длиной 190 метров
                         <div style="text-align: center;  margin-top: 15px;">
                             <audio controls>
                                 <source src="sound/projects/acousticmodels/model_full_190m.wav" type="audio/WAV">
@@ -558,9 +642,8 @@
             </div>
 
             <div class="item">
-                <div class="project-title">Биометрическая аутентификация пользователя по клавиатурному почерку с учетом силы нажатия на клавиши, параметров вибрации и движения рук</div>
+                <div class="project-title">(С# / Arduino) Биометрическая аутентификация пользователя по клавиатурному почерку с учетом силы нажатия на клавиши, параметров вибрации и движения рук</div>
                 <div class="project-title" style="color: #cecece;">Проект на сайте <a href="http://aiconstructor.ru/page14247083.html"><span style="color: #ffa600;"> aiconstructor.ru</span> </a> </div>
-
                 <ul class="project-description">
                     <div style="text-align: center;">
                         <img class="project-image" src="img/projects/smartkeyboard/pr9.jpg" alt="Project">
@@ -603,101 +686,10 @@
                         </div>
                     </div>
                 </ul>
-            </div>
-
+            </div>           
+            
             <div class="item">
-                <div class="project-title">Обнаружение дефектов зубчатого колеса колесной пары с помощью цифровой видеокамеры, магнитопорошковой индикации и C++ приложения с использованием OpenCV</div>
-                <ul class="project-description">
-                    <div style="text-align: center;">
-                        <img class="project-image" src="img/projects/defectscanner/3.jpg" alt="Project">
-                    </div>
-                    <div style="text-align: center;">
-                        <img class="project-image" src="img/projects/defectscanner/1.jpg" alt="Project">
-                    </div>
-                    <div style="text-align: center;">
-                        <img class="project-image" src="img/projects/defectscanner/2.jpg" alt="Project">
-                    </div>
-
-                    <div class="project-description-text">
-                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
-                        <li>Программная реализация на C++ Builder и OpenCV</li>
-                        <li>Решение базируется на основах математической статистики и HSV-преобразовании</li>
-                        <li>Режим работы с цифровой видеокамерой для обнаружения дефектов в реальном времени в процессе вращения зубчатого колеса</li>
-                        <li>Режим загрузки файлов изображений для анализа и настройки программы</li>
-                        <li>График распределения значений информативного признака дефекта по зубьям</li>
-                        <li>Просмотр фотографий из интерфейса программы</li>
-                        <li>Автоматический вывод номера зуба с обнаруженным дефектом во время сканирования</li>
-
-                        <div style="margin-top: 30px;">
-                            <a href="defectscanner.html" class="btn-light">
-                                Страница проекта
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="project-title">Фильтрация похожих изображений применением перцептивного хеширования</div>
-
-                <ul class="project-description">
-
-                    <div style="text-align: center;">
-                        <img class="project-image" src="img/projects/imagecleaner/hashed_harold.gif" alt="Project">
-                    </div>
-                    <div class="project-title-inside">Генерация хеша</div>
-
-
-                    <div style="text-align: center;">
-                        <img class="project-image" src="img/projects/imagecleaner/search_similar.gif" alt="Project">
-                    </div>
-                    <div class="project-title-inside">Поиск похожих изображений</div>
-
-
-                    <div style="text-align: center;">
-                        <img class="project-image" src="img/projects/imagecleaner/move_similar.gif" alt="Project">
-                    </div>
-                    <div class="project-title-inside">Перемещение похожих изображений в другую папку (правая колонка), оставлены только уникальные (левая)</div>
-
-
-                    <div style="text-align: center;">
-                        <img class="project-image" src="img/projects/imagecleaner/2_950px.jpg" alt="Project">
-                    </div>
-                    <div class="project-title-inside">Порог чувствительности 2% (перемещены почти идентичные изображения)</div>
-
-
-                    <div style="text-align: center;">
-                        <img class="project-image" src="img/projects/imagecleaner/33_950px.jpg" alt="Project">
-                    </div>
-                    <div class="project-title-inside">Порог чувствительности 33% (175 изображений из 186 были перемещены, остались только уникальные)</div>
-
-                    <div class="project-description-text">
-                        <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
-                        <li>Небольшой скрипт на Python + OpenCV с предпросмотром процесса фильтрации изображений</li>
-                        <li>Перемещает все похожие изображения или их дубликаты из выбранной директории</li>
-                        <li>Пользователь задает путь к папке с изображениями, папку для перемещения, размер хеша и коэффициент чувствительности (от 0 до 100, где 0 - абсолютная схожесть изображений, только дубликаты будут перемещены)</li>
-                        <div class="project-description-text-title" style="color:#ffa600;">Алгоритм</div>
-                        <li>Сжатие изображения до размера NxN пикселей</li>
-                        <li>Конвертация пикселей в черно-белый</li>
-                        <li>Расчет среднего значения цвета всех пикселей</li>
-                        <li>Создание нового изображения (хеш): если значение цвета пикселя превышает среднее, то делаем его белым, в противном случае - черным</li>
-                        <li>Сравнение хешей всех изображений используя расстояние Хэмминга</li>
-                        <li>Изображения считаются схожими и перемещаются из указанной папки, если разница между количеством одинаковых пикселей не превышает порог чувствительности, заданный пользователем</li>
-
-                        <div style="margin-top: 30px;">
-                            <a href="https://github.com/alexfcoding/ImageCleaner" class="btn-light">
-                                Код на GitHub
-                            </a>
-                            <a href="imagehash.html" class="btn-light">
-                                Страница проекта
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="project-title">Отрисовка изображений ASCII-символами и египетскими глифами</div>
+                <div class="project-title">(C#) Отрисовка изображений ASCII-символами и египетскими глифами</div>
 
                 <ul class="project-description">
                     <div style="text-align: center;">
@@ -741,27 +733,22 @@
             </div>
 
             <div class="item">
-                <div class="project-title">RTS Sandbox: набор C# Unity классов для создания аркадных/стратегических игр со строительством, экономикой, добычей ресурсов и противоборством сторон</div>
-
+                <div class="project-title">(C# / Unity 3D) RTS Sandbox: набор классов для создания аркадных/стратегических игр со строительством, экономикой, добычей ресурсов и противоборством сторон</div>
                 <ul class="project-description">
-
                     <div class="video-container">
                         <iframe class="video-iframe" src="https://www.youtube.com/embed/MSCK4LUibh0?rel=0" gesture="media"  allow="encrypted-media;" allowfullscreen></iframe>
                     </div>
                     <div class="project-title-inside">Пример разработанной игры с применением бесплатных ассетов моделей и текстур (Игрок / ИИ / ИИ)</div>
-
 
                     <div class="video-container">
                         <iframe class="video-iframe" src="https://www.youtube.com/embed/4vnaKTg5Cvk?rel=0" gesture="media"  allow="encrypted-media;" allowfullscreen></iframe>
                     </div>
                     <div class="project-title-inside">Тест на 600 юнитах (ИИ против ИИ)</div>
 
-
                     <div class="video-container">
                         <iframe class="video-iframe" src="https://www.youtube.com/embed/AgjpS3nFU-U?rel=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="project-title-inside">Пять противоборствующих фракций (ИИ против ИИ)</div>
-
                     <div class="project-description-text">
                         <div class="project-description-text-title" style="color:#ffa600;">Описание</div>
                         <li>Реализация на C# в Unity 3D</li>
@@ -803,9 +790,10 @@
         </div>
     </main>
 <footer id="main-footer">
-    &copy; 2020
+    &copy; 2022
 </footer>
+
 <script src="js/main.js"></script>
+
 </body>
 </html>
-
